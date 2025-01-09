@@ -1,6 +1,5 @@
 export const CONFIG = {
     API: {
-	KEY: 'AIzaSyCbPCpXa8EGS409hQwJqikviVqL2it754E',
         VERSION: 'v1alpha',
         MODEL_NAME: 'models/gemini-2.0-flash-exp'
     },
