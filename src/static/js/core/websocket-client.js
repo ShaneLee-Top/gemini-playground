@@ -155,7 +155,7 @@ export class MultimodalLiveClient extends EventEmitter {
             return;
         }
         if (response.setupComplete) {
-            this.log('server.send', 'setupComplete');
+            //this.log('server.send', 'setupComplete');
             this.emit('setupcomplete');
             return;
         }
@@ -167,7 +167,7 @@ export class MultimodalLiveClient extends EventEmitter {
                 return;
             }
             if (serverContent.turnComplete) {
-                this.log('server.send', 'turnComplete');
+                //this.log('server.send', 'turnComplete');
                 this.emit('turncomplete');
             }
             if (serverContent.modelTurn) {
