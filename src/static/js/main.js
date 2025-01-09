@@ -399,7 +399,7 @@ client.on('setupcomplete', () => {
 
 client.on('turncomplete', () => {
     isUsingTool = false;
-    logMessage('Turn complete', 'system');
+    //logMessage('Turn complete', 'system');
 });
 
 client.on('error', (error) => {
