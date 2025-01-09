@@ -38,8 +38,8 @@ const applyConfigButton = document.getElementById('apply-config');
 const responseTypeSelect = document.getElementById('response-type-select');
 
 // Load saved values from localStorage
-const savedApiKey = localStorage.getItem('gemini_api_key');
-//const savedApiKey = 'AIzaSyCbPCpXa8EGS409hQwJqikviVqL2it754E';
+//const savedApiKey = localStorage.getItem('gemini_api_key');
+const savedApiKey = 'AIzaSyCbPCpXa8EGS409hQwJqikviVqL2it754E';
 const savedVoice = localStorage.getItem('gemini_voice');
 const savedFPS = localStorage.getItem('video_fps');
 const savedSystemInstruction = localStorage.getItem('system_instruction');
