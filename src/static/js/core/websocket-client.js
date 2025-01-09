@@ -99,7 +99,7 @@ export class MultimodalLiveClient extends EventEmitter {
 
                 const setupMessage = { setup: this.config };
                 this._sendDirect(setupMessage);
-                this.log('client.send', 'setup');
+                //this.log('client.send', 'setup');
 
                 ws.removeEventListener('error', onError);
                 ws.addEventListener('close', (ev) => {
@@ -191,7 +191,7 @@ export class MultimodalLiveClient extends EventEmitter {
                 parts = otherParts;
                 const content = { modelTurn: { parts } };
                 this.emit('content', content);
-                this.log(`server.content`, response);
+                //this.log(`server.content`, response);
             }
         } else {
             console.log('Received unmatched message', response);
@@ -257,7 +257,7 @@ export class MultimodalLiveClient extends EventEmitter {
         const content = { role: 'user', parts: formattedParts };
         const clientContentRequest = { clientContent: { turns: [content], turnComplete } };
         this._sendDirect(clientContentRequest);
-        this.log(`client.send`, clientContentRequest);
+        //this.log(`client.send`, clientContentRequest);
     }
 
     /**
